@@ -14,7 +14,7 @@
 
 <p align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-3b82f6?style=for-the-badge)](link)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-3b82f6?style=for-the-badge)]([link](https://location-based-news-website-oy4brx2nb-monogutsys-projects.vercel.app/))
 
 </p>
 
