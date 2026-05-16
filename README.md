@@ -22,14 +22,9 @@
 
 # 📸 Preview
 
-# 📸 Preview
-
 <p align="center">
-  <img src="./preview/preview1.png" width="100%"/>
-</p>
-
-<p align="center">
-  <img src="./preview/preview2.png" width="100%"/>
+  <img src="./preview/preview1.png" width="49%"/>
+  <img src="./preview/preview2.png" width="49%"/>
 </p>
 
 ---
