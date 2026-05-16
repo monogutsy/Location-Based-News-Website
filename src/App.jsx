@@ -49,11 +49,7 @@ function App() {
   const [mapNews, setMapNews] =
     useState([])
 
-
-    useEffect(() => {
-      loadNews()
-    }, [location, currentPage])
-
+useEffect(() => {
   async function loadNews() {
     try {
       setLoading(true)
@@ -63,7 +59,7 @@ function App() {
         currentPage
       )
 
-setNews(data)
+      setNews(data)
 
       const geoResponse = await fetch(
         `https://geocoding-api.open-meteo.com/v1/search?name=${location}`
@@ -94,6 +90,9 @@ setNews(data)
       setLoading(false)
     }
   }
+
+  loadNews()
+}, [location, currentPage])
 
   const filteredNews =
     Array.isArray(news)
