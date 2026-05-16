@@ -48,6 +48,15 @@ body {
   z-index: 1000;
 }
 
+.sidebar button {
+  width: 100%;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
 .logo {
   font-size: 28px;
   font-weight: 800;
@@ -57,7 +66,7 @@ body {
 .sidebar nav {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .sidebar nav a {
@@ -70,6 +79,45 @@ body {
   transition: 0.25s ease;
   color: #374151;
   font-weight: 600;
+}
+
+.sidebar nav button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: none;
+  background: transparent;
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #111827;
+
+  transition: 0.2s ease;
+
+  text-align: left;
+}
+
+.sidebar nav button.active {
+  background: #eef2ff;
+  color: #2563eb;
+}
+
+.sidebar nav button svg {
+  font-size: 18px;
+}
+
+.sidebar nav button:hover {
+  background: #f3f4f6;
 }
 
 .sidebar nav a:hover {

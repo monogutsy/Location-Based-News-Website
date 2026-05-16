@@ -49,11 +49,12 @@ function App() {
   const [mapNews, setMapNews] =
     useState([])
 
-  useEffect(() => {
-    loadNews()
-  }, [location, currentPage])
 
-  const loadNews = async () => {
+    useEffect(() => {
+      loadNews()
+    }, [location, currentPage])
+
+  async function loadNews() {
     try {
       setLoading(true)
 

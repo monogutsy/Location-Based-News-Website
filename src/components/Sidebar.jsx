@@ -23,38 +23,38 @@ function Sidebar() {
       </h2>
 
       <nav>
-        <a className='active'>
+        <button className='active'>
           <FaHome /> Home
-        </a>
+        </button>
 
-        <a>
+        <button>
           <FaFire /> Trending
-        </a>
+        </button>
 
-        <a>
+        <button>
           <FaMapMarkerAlt />
           Map & Incidents
-        </a>
+        </button>
 
-        <a>
+        <button>
           <FaLayerGroup />
           Categories
-        </a>
+        </button>
 
-        <a>
+        <button>
           <FaBookmark />
           Favorites
-        </a>
+        </button>
 
-        <a>
+        <button>
           <FaHeart />
           Saved Locations
-        </a>
+        </button>
 
-        <a>
+        <button>
           <FaPlayCircle />
           Multimedia
-        </a>
+        </button>
       </nav>
 
       <div className='sidebar-categories'>
