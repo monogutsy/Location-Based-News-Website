@@ -1,27 +1,33 @@
 const API_KEY =
-  'pub_a84caf407db14c04baef56128adebf56'
+  ''
+  // api key = cb98627f848e4926805de4d7a8cd4046
 
 export const fetchNews = async (
   location,
   page = 1
 ) => {
   try {
+    const offset = (page - 1) * 10
+
     const response = await fetch(
-      `https://newsdata.io/api/1/latest?apikey=${API_KEY}&q=${location}&language=en&page=${page}`
+      `https://api.worldnewsapi.com/search-news?text=${location}&language=en&number=10&offset=${offset}&api-key=${API_KEY}`
     )
 
     const data = await response.json()
 
-    console.log('API RESPONSE:', data)
+    console.log(
+      'WORLD NEWS API:',
+      data
+    )
 
-    if (!data.results) {
+    if (!data.news) {
       return []
     }
 
-    return data.results
+    return data.news
   } catch (error) {
     console.error(
-      'News API Error:',
+      'World News API Error:',
       error
     )
 

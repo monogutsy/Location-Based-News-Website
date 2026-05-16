@@ -785,6 +785,157 @@ body {
   font-weight: 600;
 }
 
+.interactive-map-section {
+  margin-top: 60px;
+}
+
+.map-header {
+  margin-bottom: 24px;
+}
+
+.map-header h2 {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.map-header p {
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+.map-wrapper {
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.map-news-section {
+  margin-top: 40px;
+}
+
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+  border-radius: 18px !important;
+  overflow: hidden;
+  margin-top: 20px !important;
+  margin-left: 20px !important;
+}
+
+.leaflet-control-zoom a {
+  background: white !important;
+  color: #111827 !important;
+  width: 44px !important;
+  height: 44px !important;
+  line-height: 44px !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  border: none !important;
+  transition: 0.25s ease;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #2563eb !important;
+  color: white !important;
+}
+
+.leaflet-control-zoom-in {
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+.heatmap-section {
+  margin-top: 40px;
+}
+
+.heatmap-header {
+  margin-bottom: 18px;
+}
+
+.heatmap-header h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.heatmap-header p {
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.heatmap-wrapper {
+  background: white;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.heatmap-wrapper .leaflet-container {
+  height: 420px !important;
+  width: 100%;
+}
+
+.incident-panel {
+  padding: 28px;
+}
+
+.incident-panel h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.incident-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+  gap: 18px;
+}
+
+.incident-card {
+  background: #f9fafb;
+  border-radius: 24px;
+  padding: 18px;
+  transition: 0.25s ease;
+  cursor: pointer;
+  border: 1px solid #eef2f7;
+}
+
+.incident-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.incident-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.incident-badge {
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.incident-location {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.4;
+}
+
+.incident-date {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
 @media (max-width: 700px) {
   .widgets {
     flex-direction: column;

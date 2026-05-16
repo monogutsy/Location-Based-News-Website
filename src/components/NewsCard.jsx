@@ -1,21 +1,41 @@
+import { FaBookmark } from 'react-icons/fa'
+
 function NewsCard({ item }) {
   return (
-    <div>
-      <h3>{item.title}</h3>
+    <div
+      className='news-card'
+      onClick={() =>
+        window.open(item.url, '_blank')
+      }
+      style={{ cursor: 'pointer' }}
+    >
+      <img
+        src={
+          item.image ||
+          'https://via.placeholder.com/400x300'
+        }
+        alt={item.title}
+      />
 
-      <p>
-        {item.text?.slice(0, 150)}...
-      </p>
+      <div className='news-content'>
+        <span className='news-tag'>
+          {item.category?.[0] || 'News'}
+        </span>
 
-      <a
-        href={item.url}
-        target='_blank'
-        rel='noreferrer'
-      >
-        Read More
-      </a>
+        <h3>{item.title}</h3>
 
-      <hr />
+        <div className='news-footer'>
+          <span>
+            {item.publish_date
+              ? new Date(
+                  item.pubDate
+                ).toLocaleDateString()
+              : 'Latest News'}
+          </span>
+
+          <FaBookmark />
+        </div>
+      </div>
     </div>
   )
 }
